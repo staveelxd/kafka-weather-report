@@ -1,5 +1,7 @@
 package com.example.weather_report;
 
+import com.example.weather_report.enums.City;
+import com.example.weather_report.enums.WeatherCondition;
 import lombok.Data;
 
 import java.time.LocalDate;
@@ -13,10 +15,10 @@ public class WeatherData {
 
     @Override
     public String toString() {
-        return "Получена погода\n" +
-                "температура: " + temperature +
-                "\nсостояние: " + condition +
-                "\nгород: " + city +
-                "\nдата:" + date;
+        return  "Погода:\n" +
+                "Температура: " + temperature +
+                "\nСостояние: " + condition +
+                "\nГород: " + city +
+                "\nДата:" + date;
     }
 }
