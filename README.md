@@ -9,15 +9,11 @@
 git clone https://github.com/staveelxd/kafka-weather-report.git
 cd kafka-weather-report
 ```
-### 2. Соберите JAR файл приложения
+### 2. Создайте Docker образы
 ```bash
-mvn clean package -DskipTests
+docker-compose build 
 ```
-### 3. Создайте Docker образ
+### 3. Запустите контейнер
 ```bash
-docker build -t weather-app .
-```
-### 4. Запустите приложение в контейнере
-```bash
-docker run -p 8080:8080 weather-app
+docker-compose up
 ```
