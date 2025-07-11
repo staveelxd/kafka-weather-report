@@ -11,7 +11,7 @@ cd kafka-weather-report
 ```
 ### 2. Соберите JAR файл приложения
 ```bash
-mvn clean package
+mvn clean package -DskipTests
 ```
 ### 3. Создайте Docker образ
 ```bash
