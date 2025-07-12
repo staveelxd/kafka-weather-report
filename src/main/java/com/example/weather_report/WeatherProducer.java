@@ -1,5 +1,6 @@
 package com.example.weather_report;
 
+import com.example.weather_report.data.WeatherData;
 import com.example.weather_report.enums.City;
 import com.example.weather_report.enums.WeatherCondition;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -36,7 +37,7 @@ public class WeatherProducer {
     }
 
     // Генерация случайных данных о погоде
-    private WeatherData generateRandomWeatherData() {
+    WeatherData generateRandomWeatherData() {
         WeatherData data = new WeatherData();
         data.setTemperature(random.nextInt(36));
         data.setCondition(randomEnum(WeatherCondition.class));
@@ -56,6 +57,4 @@ public class WeatherProducer {
         T[] types = type.getEnumConstants();
         return types[random.nextInt(types.length)];
     }
-
-
 }

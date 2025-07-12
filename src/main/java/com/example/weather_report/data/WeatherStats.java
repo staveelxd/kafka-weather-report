@@ -1,4 +1,4 @@
-package com.example.weather_report;
+package com.example.weather_report.data;
 
 import lombok.Data;
 
@@ -25,7 +25,7 @@ public class WeatherStats {
 
         int maxRainDays = rainCount.getOrDefault(cityWithMostRain, 0);
 
-        return "===============Статистика о погоде================\n" +
+        return "\n===============Статистика о погоде================\n" +
                 String.format("Самый жаркий день: %s в городе %s, температура = %d°C\n",
                         hottestDay.getDate(), hottestDay.getCity(), hottestDay.getTemperature()) +
                 String.format("Самый холодный день: %s в городе %s, температура = %d°C\n",
