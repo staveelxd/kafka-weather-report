@@ -17,3 +17,4 @@ docker-compose build
 ```bash
 docker-compose up
 ```
+После запуска по адресу http://localhost:8080 можно открыть Kafka UI.
