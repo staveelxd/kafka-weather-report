@@ -9,12 +9,8 @@
 git clone https://github.com/staveelxd/kafka-weather-report.git
 cd kafka-weather-report
 ```
-### 2. Создайте Docker образы
+### 2. Запустите Docker-контейнер
 ```bash
-docker-compose build 
-```
-### 3. Запустите контейнер
-```bash
-docker-compose up
+docker-compose up --build 
 ```
 После запуска по адресу http://localhost:8080 можно открыть Kafka UI.
